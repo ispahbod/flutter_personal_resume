@@ -36,6 +36,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +56,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  generate: true
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -74,11 +77,20 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+    - family: IranYekan
+      fonts:
+        - asset: assets/fonts/IRANYekanMobileBold.ttf
+          weight: 900
+        - asset: assets/fonts/IRANYekanMobileBlack.ttf
+          weight: 800
+        - asset: assets/fonts/IRANYekanMobileExtraBlack.ttf
+          weight: 700
+        - asset: assets/fonts/IRANYekanMobileLight.ttf
+          weight: 600
+        - asset: assets/fonts/IRANYekanMobileMedium.ttf
+          weight: 500
+
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
